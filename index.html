@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Fontawesome CDN Link for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Logical scripts -->
+    <script src="./js/questions.js" defer></script>
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -37,19 +43,64 @@
             </div>
             <!-- Info Box -->
             <div class="info_box">
-                <div class="info_title">
-                    <span>Regras do Questionário</span>
-                </div>
+                <h3>Regras do Questionário</h3>
                 <div class="info_list">
                     <div class="info">1. Once you select your answer, you can't reselect.</div>
                     <div class="info">2. You can't select any option once time goes off.</div>
                     <div class="info">3. You can't exit from the Quiz while you're playing.</div>
                     <div class="info">4. You'll get points on the basis of your correct answers.</div>
                 </div>
-                <div class="info_buttons">
-                    <button class="restart">Iniciar Questionário</button>
-                </div>
             </div>
+            <br />
+            <form class="question_list">
+                <!-- <div class="question" id="1">
+                    <span class="question_description">
+                        1. Caracterize o seu estilo pessoal atual (de acordo com o seu conhecimento atual sobre o
+                        assunto
+                    </span>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="question-1" name="question-1" value="pratica">
+                            <label for="dewey">Prática</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="question-1" name="question-1" value="discreta">
+                            <label for="dewey">Discreta</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="question-1" name="question-1" value="sofisticada">
+                            <label for="dewey">Sofisticada</label>
+                        </div>
+                    </div>
+
+                </div> -->
+
+                <!-- Outra opção de design -->
+                <!-- <div class="question" id="1">
+                    <span class="description">
+                        1. Caracterize o seu estilo pessoal atual (de acordo com o seu conhecimento atual sobre o
+                        assunto)
+                    </span>
+                    <div class="options">
+                        <div class="option">
+                            <span>Hyper Text Markup Language</span>
+                            <div class="icon cross"><i class="fas fa-times"></i></div>
+                        </div>
+
+                        <div class="option">
+                            <span>Hyper Text Multiple Language</span>
+                        </div>
+
+                        <div class="option">
+                            <span>Hyper Tool Multi Language</span>
+                        </div>
+                    </div>
+                </div> -->
+            </form>
+
+            <button class="result_quiz">
+                Ver Resultado
+            </button>
         </section>
 
         <section class="contact" id="contact">
@@ -62,7 +113,43 @@
 
         <!-- Result Box -->
         <div class="result_box">
+            <div class="description_result">
+                <div>
+                    <strong>Palavras Chave: </strong>
+                    <span>Lorem, ipsum.</span>
+                </div>
+                <div>
+                    <strong>Mensagem: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <strong>Profissão: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <strong>Design: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <strong>Cores: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <strong>Maquiagem: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <strong>Cabelo: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <strong>Acessórios: </strong>
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </div>
+            <div class="images_result">
 
+            </div>
         </div>
 
     </main>
