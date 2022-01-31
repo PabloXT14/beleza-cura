@@ -1,0 +1,118 @@
+/* ===== Global Styling ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --pink-200: #F7966B;
+    --pink-700: #F37B7D;
+    --dark-blue: #25418A;
+
+    --white: #f9f9f9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;/*15px*/
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;/*14px*/
+    }
+}
+
+body, input, textarea, select, button {
+    font: 400 1rem 'Robot', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ==== All Similar Styling ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--pink-200), var(--pink-700));
+}
+header, main {
+    max-width: 1125px;
+    margin: auto;
+    background: var(--white);
+
+}
+section.home, 
+section.quiz, 
+section.contact {
+    padding: 2rem 0;
+}
+
+section.home, section.contact {
+    min-height: 90vh;
+    background: #f5d0c0;
+}
+
+/* ===== Header =====*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--pink-200);
+    transition: all .2s ease;
+}
+
+header nav a:hover {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+
+/* ===== Main ===== */
+main {
+
+}
+
+main .title {
+    text-align: center;
+}
+
+/*Home*/
+main .home {
+    
+}
+
+/*Quiz*/
+
+
+/*Contact*/
+
+
+
+
+
+/* ===== Footer ===== */
+footer {
+
+}
