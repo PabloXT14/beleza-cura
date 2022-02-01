@@ -11,22 +11,37 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
     <!-- Fontawesome CDN Link for Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Logical scripts -->
     <script src="./js/questions.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/headerScroll.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="" alt="Beleza Cura">
+        <!-- <img src="" alt="Beleza Cura"> -->
+        <div class="logo">
+            <p>
+                <span>B</span>eleza <span>C</span>ura
+            </p>
+        </div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#quiz">Questionário</a>
-            <a href="#contact">Contato</a>
+            <div class="menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#quiz">Questionário</a>
+                <a href="#contact">Contato</a>
+            </div>
+
+            <div class="menu_mobile">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
+
     </header>
     <main>
         <section class="home" id="home">
@@ -75,33 +90,104 @@
 
                 </div> -->
 
-                <!-- Outra opção de design -->
-                <!-- <div class="question" id="1">
-                    <span class="description">
-                        1. Caracterize o seu estilo pessoal atual (de acordo com o seu conhecimento atual sobre o
-                        assunto)
-                    </span>
-                    <div class="options">
-                        <div class="option">
-                            <span>Hyper Text Markup Language</span>
-                            <div class="icon cross"><i class="fas fa-times"></i></div>
-                        </div>
-
-                        <div class="option">
-                            <span>Hyper Text Multiple Language</span>
-                        </div>
-
-                        <div class="option">
-                            <span>Hyper Tool Multi Language</span>
-                        </div>
-                    </div>
-                </div> -->
             </form>
 
-            <button class="result_quiz">
+            <button class="result_btn">
                 Ver Resultado
             </button>
         </section>
+
+        <!-- Result Box -->
+        <div class="result_box">
+            <!-- <div class="btn_close">
+                <i class="fas fa-times"></i>
+            </div> -->
+            <div class="container">
+                <h3>Estes são seus principais estilos</h3>
+                <div class="contents">
+                    <!-- <div class="style_box">
+                        <div class="description_result">
+                            <div>
+                                <strong>Palavras Chave: </strong>
+                                <span>Lorem, ipsum.</span>
+                            </div>
+                            <div>
+                                <strong>Mensagem: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Profissão: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Design: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Cores: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Maquiagem: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Cabelo: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Acessórios: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                        </div>
+                        <div class="images_result">
+                            <img src="./assets/images/esportivo_1.png" alt="imagem">
+                        </div>
+                    </div>
+                    <div class="style_box">
+                        <div class="description_result">
+                            <div>
+                                <strong>Palavras Chave: </strong>
+                                <span>Lorem, ipsum.</span>
+                            </div>
+                            <div>
+                                <strong>Mensagem: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Profissão: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Design: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Cores: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Maquiagem: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Cabelo: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                            <div>
+                                <strong>Acessórios: </strong>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                            </div>
+                        </div>
+                        <div class="images_result">
+                            <img src="./assets/images/esportivo_1.png" alt="imagem">
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
 
         <section class="contact" id="contact">
             <div class="title">
@@ -109,48 +195,6 @@
                 <p>Entre em contato conosco para saber mais detalhes</p>
             </div>
         </section>
-
-
-        <!-- Result Box -->
-        <div class="result_box">
-            <div class="description_result">
-                <div>
-                    <strong>Palavras Chave: </strong>
-                    <span>Lorem, ipsum.</span>
-                </div>
-                <div>
-                    <strong>Mensagem: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-                <div>
-                    <strong>Profissão: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-                <div>
-                    <strong>Design: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-                <div>
-                    <strong>Cores: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-                <div>
-                    <strong>Maquiagem: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-                <div>
-                    <strong>Cabelo: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-                <div>
-                    <strong>Acessórios: </strong>
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-            </div>
-            <div class="images_result">
-
-            </div>
-        </div>
 
     </main>
     <footer>

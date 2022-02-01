@@ -64,28 +64,86 @@ section.contact {
 section.home, section.contact {
     min-height: 90vh;
     background: #f5d0c0;
+    color: #FFF;
+}
+
+section .title h2 {
+    font-size: 2rem;
 }
 
 /* ===== Header =====*/
 header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
+    z-index: 999;
+}
+
+header.header-active {
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+}
+
+header div.logo p {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Neonderthaw', sans-serif;
+}
+
+header div.logo span {
+    color: var(--pink-200);
+    font-family: 'Neonderthaw', sans-serif;
 }
 
 header nav {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    /* gap: 1rem; */
+    position: relative;
 }
 
-header nav a {
+header nav .menu a {
     color: var(--pink-200);
     transition: all .2s ease;
 }
 
-header nav a:hover {
+header nav .menu a + a {
+    margin-left: 1rem;
+}
+
+header nav .menu a:hover {
     color: var(--dark-blue);
-    font-weight: bold;
+    font-weight: 500;
+}
+
+header nav .menu a.active {
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+
+header nav .menu_mobile {
+    display: none;
+    color: var(--pink-200);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+header nav .menu_mobile:hover {
+    color: var(--dark-blue);
+}
+
+header nav .menu_mobile.show i::before {
+    content: '\f00d';
 }
 
 
@@ -100,15 +158,89 @@ main .title {
 
 /*Home*/
 main .home {
-    
+    margin-top: 4.75rem;
 }
 
 /*Quiz*/
+.quiz .question_list .question .options label {
+    display: block;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
 
+.quiz .question_list .question .options label:hover {
+    cursor: pointer;
+}
+
+.option.selected {
+    background: red;
+}
+
+
+.result_btn {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.result_btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 
 .result_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+
     display: none;
+}
+
+.result_box.show {
+    display: flex;
+    align-items: center;
+}
+
+.result_box .container {
+    margin: auto;
+    width: 50rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: var(--white);
+    position: relative;
+
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+                
+}
+
+.result_box .container .btn_close {
+    position: absolute;
+    z-index: 1000;
+    background-color: dodgerblue;
+    right: 0;
+    top: -0.5rem;
+}
+
+.result_box .contents {
+    
+}
+
+.result_box .container .contents .style_box { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+}
+
+.result_box .container .contents .style_box .images_result img {
+    max-width: 10rem;
 }
 
 /*Contact*/
@@ -119,5 +251,69 @@ main .home {
 
 /* ===== Footer ===== */
 footer {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+/* ===== Animações ===== */
+@keyframes scale-in {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
 
 }
+
+
+
+/* ===== Responsividade ===== */
+@media (max-width: 720px) {
+    header nav .menu_mobile {
+        display: block;
+    }
+
+    header nav .menu {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: -30rem;
+        width: 100%;
+
+        background: var(--pink-700);
+        color: var(--white);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+
+        transition: all .3s linear;
+    }
+
+    header nav .menu.show {
+        top: 4.6rem;
+    }
+
+    header nav .menu a {
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        background: var(--pink-200);
+        color: #FFF;
+        font-size: 1.5rem;
+    }
+
+    header nav .menu a + a {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
+    
+}
+
