@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
     <!-- Fontawesome CDN Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -20,15 +19,13 @@
     <script src="./js/questions.js" defer></script>
     <script src="./js/main.js" defer></script>
     <script src="./js/headerScroll.js" defer></script>
+    <script src="./js/carrosel.js" defer></script>
 </head>
 
 <body>
     <header>
-        <!-- <img src="" alt="Beleza Cura"> -->
         <div class="logo">
-            <p>
-                <span>B</span>eleza <span>C</span>ura
-            </p>
+            <img src="./assets/LOGO-BELEZA-CURA.png" alt="Logo Beleza Cura">
         </div>
         <nav>
             <div class="menu">
@@ -49,6 +46,24 @@
                 <h2>Home</h2>
                 <p>Junte-se a Beleza Cura, e transforme sua beleza</p>
             </div>
+            <div class="content">
+                <div class="text">
+                    <h3>Venha conhecer a Beleza Cura</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sit a aspernatur nesciunt
+                        pariatur iure id temporibus quas reprehenderit. Minima, libero expedita molestiae reprehenderit
+                        sit consequatur doloribus deleniti ea neque!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sit a aspernatur nesciunt.
+                    </p>
+                    <a href="#contact">
+                        <i class="fas fa-fan"></i>
+                        <span>Saiba mais</span>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/image-home.svg" alt="Imagem Escolhendo Roupa">
+                </div>
+            </div>
         </section>
 
         <section class="quiz" id="quiz">
@@ -60,10 +75,15 @@
             <div class="info_box">
                 <h3>Regras do Questionário</h3>
                 <div class="info_list">
-                    <div class="info">1. Once you select your answer, you can't reselect.</div>
-                    <div class="info">2. You can't select any option once time goes off.</div>
-                    <div class="info">3. You can't exit from the Quiz while you're playing.</div>
-                    <div class="info">4. You'll get points on the basis of your correct answers.</div>
+                    <div class="info">
+                        <strong>1.</strong> Responda todas as perguntas para liberer o botão de resultado.
+                    </div>
+                    <div class="info">
+                        <strong>2.</strong> Clique em "Resultado" para ver o seu resultado de estilos.
+                    </div>
+                    <div class="info">
+                        <strong>3.</strong> Você pode recalcular o resultado simplismente mudando sua opção de resposta.
+                    </div>
                 </div>
             </div>
             <br />
@@ -99,13 +119,11 @@
 
         <!-- Result Box -->
         <div class="result_box">
-            <!-- <div class="btn_close">
-                <i class="fas fa-times"></i>
-            </div> -->
             <div class="container">
                 <h3>Estes são seus principais estilos</h3>
                 <div class="contents">
                     <!-- <div class="style_box">
+                        <h4>${style.name}</h4>
                         <div class="description_result">
                             <div>
                                 <strong>Palavras Chave: </strong>
@@ -145,6 +163,7 @@
                         </div>
                     </div>
                     <div class="style_box">
+                        <h4>${style.name}</h4>
                         <div class="description_result">
                             <div>
                                 <strong>Palavras Chave: </strong>

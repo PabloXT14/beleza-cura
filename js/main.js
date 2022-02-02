@@ -6,52 +6,132 @@ const allStyles = [
     {
         id: 1,
         name: 'Esportivo',
+        icon: '<i class="fas fa-futbol"></i>',
         descript: {
-            palavras_chave: 'lorem',
-            mensagem: 'lorem',
-            profissao: 'lorem',
-            design: 'lorem',
-            cores: 'lorem',
-            maquiagem: 'lorem',
-            cabelo: 'lorem',
-            acessorios: 'lorem'
+            palavras_chave: ' Conforto, praticidade.',
+            mensagem: 'Amigável, jovem despretensiosa, alegre, econômica.',
+            profissao: 'Paisagismo, engenharia, fotografia, vendas, professora. ',
+            design: 'Linhas simples, camadas, roupas folgadas e confortáveis, fácil manutenção.',
+            cores: 'Marinho, khaki, tons terra, cores primárias, look com 3 ou 4 cores.',
+            maquiagem: ' Natural.',
+            cabelo: ': Cortes mensais, cortes que não necessitam arrumar.',
+            acessorios: 'Poucos e simples em madeira, couro, cordas.'
         },
         exemplos: [
             './assets/images/esportivo_1.png',
+            './assets/images/esportivo_2 - Alessandra Ambrosio.png'
         ]
     },
     {
         id: 2,
         name: 'Clásico',
+        icon: '<i class="far fa-clock"></i>',
         descript: {
-            palavras_chave: 'lorem',
-            mensagem: 'lorem',
-            profissao: 'lorem',
-            design: 'lorem',
-            cores: 'lorem',
-            maquiagem: 'lorem',
-            cabelo: 'lorem',
-            acessorios: 'lorem'
+            palavras_chave: 'Funcionalidade, discrição.',
+            mensagem: 'Conservadora, autoridade, reservada, respeito.',
+            profissao: ': Financeiro, educação, governo, advogados.',
+            design: 'Roupas fechadas, linhas estruturadas, roupas funcionais, peças atemporais.',
+            cores: ' Marinho, cinza e bege, vinho, azul, verde escuro, 2 e 3 cores num look.',
+            maquiagem: 'Usa a mesma rotina, não experimenta novidades.',
+            cabelo: 'Mantém o mesmo corte de cabelo.',
+            acessorios: 'Usa joias tradicionais e adora lenços.'
         },
         exemplos: [
-            './assets/images/classico_1 - Kate Midletown.png'
+            './assets/images/classico_1 - Kate Midletown.png',
+            './assets/images/classico_2 - Mary Orton.png'
+        ]
+    },
+    {
+        id: 3,
+        name: 'Contemporâneo',
+        icon: '<i class="fas fa-glass-cheers"></i>',
+        descript: {
+            palavras_chave: 'Urbana, chique.',
+            mensagem: 'Refinamento e bem-sucedida, segura e culta.',
+            profissao: 'Diplomata, telejornalista, digital influencer.',
+            design: 'Linhas simples, coordenáveis que permitem acessórios, impecável, médio estruturado, formal, linhas simples, segue tendências que não são as da moda.',
+            cores: ' Creme, bege, cinza, preto, marinho, charuto, usa tom sobre tom (monocromáticos). ',
+            maquiagem: 'Usa maquiagem suave e perfeita, a noite carrega mais nos olhos.',
+            cabelo: 'São bem cuidados e cortados regularmente, tem aspecto natural. ',
+            acessorios: 'Peças com design, bolsas e sapatos de alta qualidade.'
+        },
+        exemplos: [
+            './assets/images/contemporaneo_1 - olivia palermo.png',
+            './assets/images/contemporaneo_2 - Pamela Barja.png'
+        ]
+    },
+    {
+        id: 4,
+        name: 'Romântico',
+        icon: '<i class="far fa-grin-hearts"></i>',
+        descript: {
+            palavras_chave: 'Enfeitar-se.',
+            mensagem: 'Leve e romântica, compreensiva, doce, gentil e graciosa. ',
+            profissao: 'Conselheira, trabalho com crianças, terapêutica, gastronomia. ',
+            design: 'Suave, linhas curvas, levemente acinturado, detalhes.',
+            cores: 'Pastéis, combinação monocromáticas e analógicas.',
+            maquiagem: 'Sempre usa maquiagem.',
+            cabelo: 'Normalmente longos, com reflexos e acessórios.',
+            acessorios: ' Sempre de saltos, adora flor e bolsas com detalhes, lacinho.'
+        },
+        exemplos: [
+            './assets/images/romantico_1 - mary orton.png',
+            './assets/images/romantico_2 - julia berolzheiemer.png'
+        ]
+    },
+    {
+        id: 5,
+        name: 'Sexy',
+        icon: '<i class="fas fa-pepper-hot"></i>',
+        descript: {
+            palavras_chave: 'Mostrar o corpo',
+            mensagem: 'Sexy, glamourosa, desejável, cultua o corpo.',
+            profissao: ' Dançarina, hostess, professora de ginástica, representante de maquiagem, modelo, cantora.',
+            design: 'Marcando ou mostrando o corpo (decote, fenda, transparência).',
+            cores: 'Preto, branco, rosa forte, turquesa, dourado, verde esmeralda, vermelho.',
+            maquiagem: 'Sempre usa a mesma maquiagem, adorno com brilho.',
+            cabelo: 'Em camadas, comprimento médio para longo.',
+            acessorios: 'Com balanço e barulho.'
+        },
+        exemplos: [
+            './assets/images/sexy_1 - Tassia Neves.png',
+            './assets/images/sexy_2 - Naty Vozza.png'
+        ]
+    },
+    {
+        id: 6,
+        name: 'Moderno',
+        icon: '<i class="fas fa-user-tie"></i>',
+        descript: {
+            palavras_chave: 'Chamar a atenção, impactar.',
+            mensagem: 'Fashionista, ultramoderna, sofisticada, poderosa, centro das atenções.',
+            profissao: 'Propaganda, cosmetologia, marketing, moda, decoradora, consultora de imagem.',
+            design: 'Liso, não clássico, angular, muito estruturado, metalizado, ponta, tecido tecnológico.',
+            cores: ' Preto, branco, vermelho, magenta, roxo, safira, amarelo, 1 ou 2 cores no look.', maquiagem: 'Contrastante com a pele, baton vermelho, olhos com lápis e muito rímel.',
+            cabelo: 'Cortes angulares.',
+            acessorios: 'Geométricos, supergrandes e sofisticados, última moda.'
+        },
+        exemplos: [
+            './assets/images/dramatico urbano_1 - vitoria beckham.png'
         ]
     },
     {
         id: 7,
         name: 'Criativo',
+        icon: '<i class="far fa-lightbulb"></i>',
         descript: {
-            palavras_chave: 'lorem',
-            mensagem: 'lorem',
-            profissao: 'lorem',
-            design: 'lorem',
-            cores: 'lorem',
-            maquiagem: 'lorem',
-            cabelo: 'lorem',
-            acessorios: 'lorem'
+            palavras_chave: 'Original.',
+            mensagem: 'Originalidade, independência, liberdade.',
+            profissao: 'Atriz, arquiteta, dançarina, produtora de moda, consultora de imagem, artista plástica.',
+            design: 'Mistura de clássico e não clássico, feminino e masculina, gosta de guardar coisas para futuras produções.',
+            cores: 'Escuras, khaky, olivas, ferrugens, mostarda Maquiagem: Nos olhos ou boca uma cor diferente.',
+            maquiagem: 'Nos olhos ou boca uma cor diferente.',
+            cabelo: 'Cortes assimétricos, cores diferentes.',
+            acessorios: 'Étnicos e vintage.'
         },
         exemplos: [
-            './assets/images/criativo_1 - lele burnier.png'
+            './assets/images/criativo_1 - lele burnier.png',
+            './assets/images/criativo_2 - blair eadiebee.png'
         ]
     }
 ]
@@ -97,12 +177,12 @@ function loadOptions(arrayOptions, idQuestion) {
 
         options += `
         <label for="question_${idQuestion}-option_${index + 1}" class="option">
-            <input type="radio" 
-                id="question_${idQuestion}-option_${index + 1}" 
-                name="question-${idQuestion}" 
-                value=${index + 1}
-            >
-            ${option}
+                <input type="radio" 
+                    id="question_${idQuestion}-option_${index + 1}" 
+                    name="question-${idQuestion}" 
+                    value=${index + 1}
+                >
+            <span>${option}</span>
         </label>
         `;
 
@@ -197,7 +277,6 @@ function checkingMainStyles(arrAnswers) {
 
 }
 
-
 //função seta a descrição estilos mais votados 
 function setDescriptionMainStyles() {
     let tagContentsStyles = '';
@@ -208,43 +287,66 @@ function setDescriptionMainStyles() {
             style.id === Number(mainStyles.style3)) {
             tagContentsStyles += `
                 <div class="style_box">
-                    <h4>${style.name}</h4>
-                    <div class="description_result">
-                        <div>
-                            <strong>Palavras Chave: </strong>
-                            <span>${style.descript.palavras_chave}</span>
+                    <h4>
+                        ${style.icon}
+                        ${style.name}
+                    </h4>
+                    <div class="style_content">
+                        <div class="description_result">
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Palavras Chave: </strong>
+                                <span>${style.descript.palavras_chave}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Mensagem: </strong>
+                                <span>${style.descript.mensagem}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Profissão: </strong>
+                                <span>${style.descript.profissao}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Design: </strong>
+                                <span>${style.descript.design}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Cores: </strong>
+                                <span>${style.descript.cores}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Maquiagem: </strong>
+                                <span>${style.descript.maquiagem}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Cabelo: </strong>
+                                <span>${style.descript.cabelo}</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fan"></i>
+                                <strong>Acessórios: </strong>
+                                <span>${style.descript.acessorios}</span>
+                            </div>
                         </div>
-                        <div>
-                            <strong>Mensagem: </strong>
-                            <span>${style.descript.mensagem}</span>
+                        <div class="slide">
+                            <div class="slides">
+                            <div id="back" class="btn">
+                                <i class="fas fa-chevron-left"></i> 
+                            </div>
+                            <div id="next" class="btn">
+                                <i class="fas fa-chevron-right"></i> 
+                            </div>
+                                ${loadImagesStyle(style.exemplos, style.name)}
+                            </div>
+                            <div class="balls">
+                            </div>
                         </div>
-                        <div>
-                            <strong>Profissão: </strong>
-                            <span>${style.descript.profissao}</span>
-                        </div>
-                        <div>
-                            <strong>Design: </strong>
-                            <span>${style.descript.design}</span>
-                        </div>
-                        <div>
-                            <strong>Cores: </strong>
-                            <span>${style.descript.cores}</span>
-                        </div>
-                        <div>
-                            <strong>Maquiagem: </strong>
-                            <span>${style.descript.maquiagem}</span>
-                        </div>
-                        <div>
-                            <strong>Cabelo: </strong>
-                            <span>${style.descript.cabelo}</span>
-                        </div>
-                        <div>
-                            <strong>Acessórios: </strong>
-                            <span>${style.descript.acessorios}</span>
-                        </div>
-                    </div>
-                    <div class="images_result">
-                        ${loadImagesStyle(style.exemplos, style.name)}
                     </div>
                 </div>
             `;
@@ -257,9 +359,11 @@ function setDescriptionMainStyles() {
 // função para carregar imagens dos estilos mais votados
 function loadImagesStyle(arrImages, nameStyle) {
     let imagens = '';
-    arrImages.forEach((image) => {
+    arrImages.forEach((image, index) => {
         imagens += `
-        <img src="${image}" alt="imagem do estilo ${nameStyle}">
+        <div id="${index === 0 ? 'atual' : ''}" class="image">
+            <img src="${image}" alt="imagem do estilo ${nameStyle}">
+        </div>
         `;
 
     });
@@ -273,6 +377,8 @@ function loadImagesStyle(arrImages, nameStyle) {
 result_btn.addEventListener('click', (event) => {
     result_box.querySelector('.container .contents').innerHTML = setDescriptionMainStyles();
     result_box.classList.add('show');
+
+    //Carregando carrolsel
 });
 
 
