@@ -508,18 +508,6 @@ main .quiz {
     width: 30%;
 }
 
-.carrosel .content .card {
-
-}
-
-.carrosel .content .card .card-content {
-
-}
-
-.carrosel .content .card .image {
-
-}
-
 .carrosel .content .card .image img {
     max-height: 20rem;
 }
@@ -653,12 +641,15 @@ footer p a {
 
     main .home .content {
         flex-direction: column-reverse;
+        align-items:flex-start;
         gap: 1rem;
     }
 
-    .home .content .text, .home .content .image {
-        width: 60vw;
-    } 
+    .home .content .text, 
+    .home .content .image {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 720px) {
