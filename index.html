@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Icone Page -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
     <!-- Logical scripts -->
     <script src="./js/questions.js" defer></script>
     <script src="./js/main.js" defer></script>
@@ -32,7 +34,7 @@
         <nav>
             <div class="menu">
                 <a href="#home" class="active">Home</a>
-                <a href="#quiz">Questionário</a>
+                <a href="#quiz">Questões</a>
                 <a href="#contact">Contato</a>
             </div>
 
@@ -45,21 +47,24 @@
     <main>
         <section class="home" id="home">
             <div class="title">
-                <h2>Home</h2>
-                <p>Junte-se a Beleza Cura, e transforme sua beleza</p>
+                <h2>Questionário de avaliação de Estilo</h2>
+                <p>
+                    Conhecer nosso estilo é um passo fundamental na construção da nossa imagem exterior, aquela que
+                    revela quem nós somos por dentro, ou seja, nossa imagem interior. Utilizamos o questionário de
+                    estilo baseado na classificação dos sete estilos universais da Alyce Parsons. Vamos descobrir seu
+                    estilo? Para isso você responde às questões abaixo e, como resultado, você terá os seus três estilos
+                    principais. É importante verificar se o resultado condiz com o seu desejo de imagem. Caso não seja
+                    condizente, é preciso fazer um ajuste na sua imagem e estilo.
+                </p>
             </div>
             <div class="content">
                 <div class="text">
-                    <h3>Venha conhecer a Beleza Cura</h3>
+                    <h3>Preencha o formulário e receba informações sobre como ficar mais bonita</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sit a aspernatur nesciunt
-                        pariatur iure id temporibus quas reprehenderit. Minima, libero expedita molestiae reprehenderit
-                        sit consequatur doloribus deleniti ea neque!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sit a aspernatur nesciunt.
                     </p>
                     <a href="#contact">
                         <i class="fas fa-fan"></i>
-                        <span>Saiba mais</span>
+                        <span>Formulário</span>
                     </a>
                 </div>
                 <div class="image">
@@ -70,21 +75,24 @@
 
         <section class="quiz" id="quiz">
             <div class="title">
-                <h2>Questionário</h2>
+                <h2>Questões</h2>
                 <p>Realize nosso questionário para saber quais os seus principais estilos</p>
             </div>
             <!-- Info Box -->
             <div class="info_box">
-                <h3>Regras do Questionário</h3>
+                <h3>Observações</h3>
                 <div class="info_list">
                     <div class="info">
                         <strong>1.</strong> Responda todas as perguntas para liberer o botão de resultado.
                     </div>
                     <div class="info">
-                        <strong>2.</strong> Clique em "Resultado" para ver o seu resultado de estilos.
+                        <strong>2.</strong> Ao clicar em &lt;Ver Resultado&gt; você obterá informações sobre os três
+                        estilos
+                        principais para o seu momento atual.
                     </div>
                     <div class="info">
-                        <strong>3.</strong> Você pode recalcular o resultado simplismente mudando sua opção de resposta.
+                        <strong>3.</strong> Caso o resultado não reflita seu desejo de imagem você pode responder
+                        novamente alterando as opções em cada pergunta.
                     </div>
                 </div>
             </div>
@@ -216,11 +224,42 @@
                 <h2>Contato</h2>
                 <p>Entre em contato conosco para saber mais detalhes</p>
             </div>
+            <div class="row">
+                <div class="image">
+                    <img src="./assets/images/image-contact.svg" alt="Contact Form Image">
+                </div>
+
+                <div class="form-container">
+                    <form action="https://formsubmit.co/trafego@belezacura.com.br" method="POST">
+                        <!-- Inputs de logica do FormSubmit -->
+                        <!-- Pagina com Menssagem de Sucess -->
+                        <!-- <input type="hidden" name="_next"
+                            value="https://pabloxt14.github.io/Landing-Page-Tech-Education/pages/sendEmailSucess.html" /> -->
+
+                        <!-- Enviando message para mais de um email -->
+                        <!-- <input type="hidden" name="_cc" value="lpp3tres@gmail.com" /> -->
+
+                        <!-- Resposta automatica para o cliente -->
+                        <input type="hidden" name="_autoresponse"
+                            value="Recebi sua mensagem, obrigado por acessar nosso site, te responde o mais rápido possível 😊😊😊!">
+                        <!-- Esconder o filtro de spam da FormSubmit -->
+                        <!-- <input type="hidden" name="_captcha" value="false" /> -->
+
+
+                        <!-- Input Visiveis -->
+                        <input type="text" name="name" placeholder="Nome Completo" required />
+                        <input type="email" name="email" placeholder="Digite seu e-mail" required />
+                        <input type="tel" name="telephone" placeholder="Telefone" required />
+                        <textarea name="message" placeholder="Messagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
     <footer>
-        <p>Created by <a href="#">Pablo Alan</a> | 2022</p>
+        <p>Created by <a href="mailto:pabloxt14@gmail.com" target="_blank">Pablo Alan</a> | 2022</p>
     </footer>
 
 

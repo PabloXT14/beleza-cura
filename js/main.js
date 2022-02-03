@@ -2,6 +2,9 @@ const question_list = document.querySelector(".question_list");
 const result_btn = document.querySelector(".result_btn");
 const result_box = document.querySelector(".result_box");
 
+
+/* ===== Settings Quiz ===== */
+
 const allStyles = [
     {
         id: 1,
@@ -145,6 +148,7 @@ let mainStyles = {
 
 showQuestions();
 
+// funcao para mostrar todas as questões
 function showQuestions() {
     let que_tags = ``;
 
@@ -171,6 +175,7 @@ function showQuestions() {
     }
 }
 
+//funcao para carregar as opções de cada questão
 function loadOptions(arrayOptions, idQuestion) {
     let options = '';
     arrayOptions.forEach((option, index) => {
@@ -190,6 +195,7 @@ function loadOptions(arrayOptions, idQuestion) {
     return options;
 }
 
+//funcao para setar opção selecionada
 function optionSelected(optionElement) {
 
     // Removendo Checked das outras opções
@@ -206,6 +212,7 @@ function optionSelected(optionElement) {
     checkAllQuestions();
 }
 
+//funcao para checar se todas as questoes foram respondidas
 function checkAllQuestions() {
     const optionsChecked = question_list.querySelectorAll(".selected");
     const inputsChecked = question_list.querySelectorAll(".selected input");
