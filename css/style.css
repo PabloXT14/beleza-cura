@@ -175,7 +175,6 @@ main .home {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
 }
 
 .home .content .image {
