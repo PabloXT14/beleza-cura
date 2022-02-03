@@ -479,17 +479,23 @@ main .quiz {
 .contact .row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5rem;
 }
 
 .contact .row .image img {
-    width: 50vw;
-    height: 70vh;
+    /* width: 50vw; */
+    /* max-height: 70vh; */
+    width: 100%;
+}
+
+.contact .row .image {
+    width: 50%;
 }
 
 .contact .row .form-container {
     width: 50%;
-    padding-right: 6rem;
+    /* padding-right: 6rem; */
 }
 
 .contact .row .form-container input,
@@ -656,11 +662,17 @@ footer p a {
     /* Contact */
     .contact .row {
         flex-direction: column;
+        padding: 0;
     }
 
     .contact .row .image img {
-        height: 50vh;
-        width: 90vw;
+        /* height: 50vh; */
+        /* width: 90vw; */
+    }
+
+    .contact .row .image {
+        width: 90%;
+        padding: 0;
     }
 
     .contact .row .form-container {
