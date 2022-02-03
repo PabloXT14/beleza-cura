@@ -69,17 +69,3 @@ let questions = [
     }
 
 ]
-
-
-
-/*
-Como são as	peças que predominam no	seu	guarda-roupa?
-
-Confortáveis,	de	fácil	manutenção.
-Atemporais,	corte	reto. (peças	que	nunca	saem	de	moda)
-Tecidos	refinados,	corte	impecável.
-Esvoaçantes,	com	tecidos	fluidos.
-Justas,	com	decotes.
-Aquelas	que	são	tendência	da	estação.
-Vários	estilos	de	peças.
-*/

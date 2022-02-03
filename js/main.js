@@ -334,18 +334,13 @@ function setDescriptionMainStyles() {
                                 <span>${style.descript.acessorios}</span>
                             </div>
                         </div>
-                        <div class="slide">
-                            <div class="slides">
-                            <div id="back" class="btn">
-                                <i class="fas fa-chevron-left"></i> 
-                            </div>
-                            <div id="next" class="btn">
-                                <i class="fas fa-chevron-right"></i> 
-                            </div>
+                        <div class="swiper mySwiper carrosel">
+                            <div class="swiper-wrapper content">
                                 ${loadImagesStyle(style.exemplos, style.name)}
                             </div>
-                            <div class="balls">
-                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -361,8 +356,12 @@ function loadImagesStyle(arrImages, nameStyle) {
     let imagens = '';
     arrImages.forEach((image, index) => {
         imagens += `
-        <div id="${index === 0 ? 'atual' : ''}" class="image">
-            <img src="${image}" alt="imagem do estilo ${nameStyle}">
+        <div class="swiper-slide card">
+            <div class="card-content">
+                <div class="image">
+                    <img src="${image}" alt="imagem do estilo ${nameStyle}">
+                </div>
+            </div>
         </div>
         `;
 
@@ -379,6 +378,21 @@ result_btn.addEventListener('click', (event) => {
     result_box.classList.add('show');
 
     //Carregando carrolsel
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 });
 
 
