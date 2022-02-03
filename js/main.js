@@ -177,11 +177,11 @@ function loadOptions(arrayOptions, idQuestion) {
 
         options += `
         <label for="question_${idQuestion}-option_${index + 1}" class="option">
-                <input type="radio" 
-                    id="question_${idQuestion}-option_${index + 1}" 
-                    name="question-${idQuestion}" 
-                    value=${index + 1}
-                >
+            <input type="radio" 
+                id="question_${idQuestion}-option_${index + 1}" 
+                name="question-${idQuestion}" 
+                value=${index + 1}
+            >
             <span>${option}</span>
         </label>
         `;

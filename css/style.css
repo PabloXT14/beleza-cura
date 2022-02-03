@@ -292,13 +292,6 @@ main .quiz {
     margin-bottom: 1rem;
 }
 
-
-/*   */
-
-.quiz .question_list .question .options {
-
-}
-
 .quiz .question_list .question .options .option {
     border: 1px solid var(--pink-700);
     border-radius: 5px;
@@ -316,6 +309,9 @@ main .quiz {
     background: var(--pink-100);
 }
 
+.quiz .question_list .question .options .option span {
+    flex: 1;
+}
 
 .quiz .question_list .question .options .option input[type="radio"] {
     appearance: none;
@@ -328,6 +324,7 @@ main .quiz {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .quiz .question_list .question .options .option input[type="radio"]:checked {
@@ -358,10 +355,7 @@ main .quiz {
     background: var(--pink-700);
     color: #fff;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    align-items: center;
-    /* max-width: 10rem; */
+    
     padding: 0 1rem;
     height: 3rem;
 
@@ -375,14 +369,18 @@ main .quiz {
     transform: translateY(-7px);
 }
 
-.quiz .result_btn::before {
-    content: 'Preencha todas as questões para calcular o resultado';
-    position: absolute;
-    left: 0;
-    width: 200%; 
-    bottom: -1rem;
+.quiz .result_btn + span.alert {
+    display: block;
+    text-align: left;
+    margin-top: 0.2rem;
     color: var(--pink-700);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    /* background: dodgerblue; */
+
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 .quiz .result_btn.show {
@@ -390,8 +388,8 @@ main .quiz {
     pointer-events: auto;
 }
 
-.quiz .result_btn.show::before {
-    content: '';
+.quiz .result_btn.show + span.alert {
+    display: none;
 }
 
 /* === Modal Result ===  */
