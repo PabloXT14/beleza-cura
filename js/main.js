@@ -115,7 +115,8 @@ const allStyles = [
             acessorios: 'Geométricos, supergrandes e sofisticados, última moda.'
         },
         exemplos: [
-            './assets/images/dramatico urbano_1 - vitoria beckham.png'
+            './assets/images/dramatico urbano_1 - vitoria beckham.png',
+            './assets/images/dramatico urbano_2.png'
         ]
     },
     {
